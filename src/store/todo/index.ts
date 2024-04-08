@@ -1,12 +1,7 @@
+import { Todo } from "@/types";
 import { createSlice } from "@reduxjs/toolkit";
 
-export interface TodoState {
-  id?: number;
-  title: string;
-  completed: boolean;
-}
-
-const initialState: TodoState = {
+const initialState: Todo = {
   id: 0,
   title: "",
   completed: false,
